@@ -1,0 +1,162 @@
+
+*{
+    --beige:#f7f5e6;
+    --como: #547665;
+    --oxford-blue:#354E57;
+    --white:#ffffff;
+    --silver-rust:#C6B9B6;
+    --athens-gray:#EEF2F4;
+    --rangitoto:#2E2E22;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+
+ul > li {
+    list-style: none;
+    
+}
+ul > li > a{
+    text-decoration: none;
+    color: var(--white);
+
+}
+#offer_banner{
+    background-color: #A67744;
+    color: var(--beige);
+    
+}
+
+/*=====================Hero Banner===========================*/
+#hero-banner{
+    background-color: #E2E6E9;
+}
+#heroMainImg{
+    position: relative;
+    
+   
+}
+#plant{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    z-index: 2;
+}
+#plant1{
+    position: absolute;
+    top: 25%;
+    right: 14%;
+    z-index: 2;
+}
+#bottleImage{
+    position: absolute;
+    top: 25%;
+    right: 12%;
+    z-index: 2;
+    width: 25%;
+}
+
+#secondary-banner{
+    border: 1px solid var(--como);
+    background-color: #EEF3F4;
+}
+.product-teaser{
+    background-color: #EEF3F4;
+    padding: 4em 0;
+}
+/*===============================Teaser===========================*/
+
+#man-image{
+    height: 35rem;
+    background-image: url(../Assets/man-in-blue-top-2830332.png);
+
+    background-size: cover;
+    
+}
+#teaser-1{
+    background-color: var(--como);
+    color: var(--white);
+}
+#teaser-1 p{
+    color: var(--athens-gray);
+}
+
+
+/*================================Teaser 2=================================*/
+#woman-image{
+    height: 35rem;
+    background-image: url(../Assets/sincerely-media-CjHJbp3zInA-unsplash_copy.png);
+
+    background-size: cover;
+    
+}
+
+#teaser-2{
+    
+    background-color: var(--silver-rust);
+    color: var(--white);
+}
+#teaser-2 p{
+    color: var(--rangitoto);
+}
+/*===============================Feature Banner===========================*/
+#feature-banner{
+    background-color: var(--athens-gray);
+}
+
+#feature-banner i{
+    margin: 0.5em;
+    font-size: 3rem;
+    color: var(--silver-rust);
+}
+#feature-banner p{
+    color: var(--oxford-blue);
+}
+#feature-banner a{
+    color: #354E57;
+}
+
+/*=================================Footer==========================*/
+#footer{
+    background-color: var(--oxford-blue);
+    color: var(--white);
+}
+.col-4 > a{
+    color: var(--white);
+}
+
+#subscribeDiv{
+    position: relative;
+    width: 60%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+#subscribeDiv button, input{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    padding: 0.5em;
+    
+}
+#subscribeDiv button{
+    width: 38%;
+    border-left: 1px solid white;
+}
+#subscribeDiv button:hover{
+   
+    border: 1px solid blue;
+}
+#subscribeDiv input{
+    width: 60%;
+}
+#social-icons i{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#social-icons a{
+   color: var(--white);
+}
+#footerBorder{
+    border-bottom: 1px solid var(--white);
+}

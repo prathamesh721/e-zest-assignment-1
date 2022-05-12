@@ -1,21 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- ====================Style======================-->
-    <link rel="stylesheet" href="./CSS/bootstrap.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/257c16a74e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <script src="./JS/bootstrap.min.js"></script>
-</head>
-<body>
+  </head>
 
+  <body>
+    <!--====================offer banner=======================-->
+    <div class="container-fluid" id="offer_banner">
+      <div class="container">
+        <div class="row">
+          <p class="text-center mb-auto p-2">
+            Free Standard Shipping on orders over $99.99
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!--=====================Header===========================-->
 
+    <div class="container-fluid" id="header">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-left" href="#">sooth</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONSULTATION</a>
+                </li>
+              </ul>
+
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CART</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--=====================Hero Banner===========================-->
+    <div class="container-fluid" id="hero-banner">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 p-5 order-last order-md-first m-auto">
+          <h2>All Natural Skin Remedies.</h2>
+          <p>
+            A healthier you from the inside out. We’ve sourced the cleanest
+            ingredients to create a line of clean skin care treatments that
+            leave you feeling your best
+          </p>
+          <button>Shop products</button>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img id="heroMainImg"
+            src="./Assets/updated_Header_copy.png"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          
+          <!-- <img src="./Assets/plant.png" alt="" id="plant">
+          <img src="./Assets/plant-1.png" alt="" id="plant1">
+          <img src="./Assets/ezcema@3x.png" alt="" id="bottleImage"> -->
+        </div>
+      </div>
+    </div>
+
+    <!--=====================Secondary Banner===========================-->
+    <div class="container-fluid" id="secondary-banner">
+      <div class="container">
+        <div class="row text-center py-2">
+          <h2>Solutions for all skin health</h2>
+          <p>Explore our innovative skincare products</p>
+        </div>
+      </div>
+    </div>
+
+    <!--=====================Product Teaser 1===========================-->
+
+    <div class="container-fluid product-teaser">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1_copy.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/vitiligio.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/suburn1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/ezcema.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=====================Teaser===========================-->
+    <div class="container-fluid" id="teaser-1">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5 m-auto">
+          <h2>Clean products that deliver better solutions</h2>
+          <p>
+            A healthier you from the inside out. We’ve sourced the cleanest
+            ingredients to create a line of clean skin care treatments that
+            leave you feeling your best
+          </p>
+          <button>Shop more</button>
+        </div>
+        <div class="col-md-6" id="man-image"></div>
+      </div>
+    </div>
+    <!--=====================Product Teaser 2 8 products===========================-->
+
+    <div class="container-fluid product-teaser">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/ezcema.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/ezcema-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/suburn1-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/vitiligio_Balm.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/vitiligio.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1_copy.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/acne_Cream_copy.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/ezema_dropper.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     
-</body>
+    <!--=====================Teaser 2===========================-->
+    <div class="container-fluid" id="teaser-2">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5 m-auto">
+          <div id="woman-text">
+            <h2>Clean products that deliver better solutions</h2>
+          <p>
+            A healthier you from the inside out. We’ve sourced the cleanest
+            ingredients to create a line of clean skin care treatments that
+            leave you feeling your best
+          </p>
+          <button>Shop more</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-first" id="woman-image"></div>
+      </div>
+    </div>
+    <!--=====================Product Teaser===========================-->
+
+    <div class="container-fluid product-teaser">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+          <div class="col-md-3 col-6 text-center">
+            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
+            <h3>Acne Cream</h3>
+            <p>All Natural ingredients</p>
+            <h4>$24.99</h4>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=================================Image tiles===================================-->
+    <div class="container py-5 text-center">
+      <div class="row">
+        <h2>We use the best ingredients</h2>
+        <p>Explore our innovative skincare products</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/basil.png" alt="" width="50%" />
+          <h4>Mint</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/cacao.png" alt="" width="50%" />
+          <h4>Cacao</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/cheese.png" alt="" width="50%" />
+          <h4>Coconut roots</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/floor.png" alt="" width="50%" />
+          <h4>Flour</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/honey.png" alt="" width="50%" />
+          <h4>Honey</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <img src="./Assets/cropped/tomato.png" alt="" width="50%" />
+          <h4>Tomato</h4>
+          <p>Lorem ipsum dolar et al</p>
+        </div>
+      </div>
+    </div>
+    <!--=================================Feature Banner===================================-->
+    <div class="container-fluid py-5" id="feature-banner">
+      <div class="row">
+        <div class="col-12 col-md-4 text-center">
+          <i class="fa-solid fa-store"></i>
+          <p><strong>We’re offering new ways to shop.</strong></p>
+          <a href="#">Store locator</a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p><strong>We’re offering new ways to shop.</strong></p>
+          <a href="#">Store locator</a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p><strong>We’re offering new ways to shop.</strong></p>
+          <a href="#">Store locator</a>
+        </div>
+      </div>
+    </div>
+    <!--=================================News Letter===================================-->
+    <div class="container py-5 text-center">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <h2>Join the Sooth family</h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy
+          </p>
+        </div>
+        <div class="col-12 col-md-5">
+          <input type="text" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <!--=================================Footer===================================-->
+    <div class="container-fluid py-5" id="footer">
+      <div class="container">
+        <div class="row" id="footerBorder">
+          <div class="col-12 col-md-6">
+            <h2>sooth</h2>
+            <p>Explore our innovative skincare products</p>
+            <div id="subscribeDiv">
+              <input type="text" placeholder="Your email..." />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <h3>SHOP</h3>
+                <ul>
+                  <li><a href="">Lorem ipsum al</a></li>
+                  <li><a href="">Dolar at</a></li>
+                  <li><a href="">Veraotio</a></li>
+                  <li><a href="">Chauloe</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h3>ABOUT</h3>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Sooth Stories (Blog)</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Learn More</a></li>
+                  <li><a href="">Stores</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h3>MORE</h3>
+                <ul>
+                  <li><a href="">Dollar at</a></li>
+                  <li><a href="">Lorem at al</a></li>
+                  <li><a href="">Veraotio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <p>SOOTH ALL RIGHTS RESERVED</p>
+          <div class="d-md-flex justify-content-md-between">
+            <div class="row">
+              <div class="col-4"><a href="">Privacy Policy</a></div>
+              <div class="col-4"><a href="">Terms of Use</a></div>
+              <div class="col-4"><a href="">Contact Us</a></div>
+            </div>
+            <div id="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
