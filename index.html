@@ -32,21 +32,21 @@
 
     <div class="container-fluid" id="header">
       <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
+              data-bs-target=".navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand text-left" href="#">sooth</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="collapse navbar-collapse navbarSupportedContent" id="">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
@@ -57,29 +57,44 @@
                   <a class="nav-link" href="#">CONSULTATION</a>
                 </li>
               </ul>
-
-              <form class="d-flex">
+            </div>
+            <a class="navbar-brand text-center" href="#">sooth</a>
+            <div class="collapse navbar-collapse navbarSupportedContent">
+              <div class="d-flex">
                 <input
                   class="form-control me-2"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  id="inputSearch" 
                 />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
+                <button class="btn " type="submit" onclick="displayInput()">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-              </form>
+              </div>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CART</a>
+                  <a class="nav-link d-none d-lg-block" href="#">CART</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">LOGIN</a>
+                  <a class="nav-link d-none d-lg-block" href="#">LOGIN</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+      </div>
+      <div
+        class="row collapse navbar-collapse navbarSupportedContent"
+        id="navBottomMenu"
+      >
+        <ul class="d-md-block d-lg-flex justify-content-lg-center">
+          <li><a href="">Acne</a></li>
+          <li><a href="">Sun</a></li>
+          <li><a href="">Ezcema</a></li>
+          <li><a href="">Psoriasis</a></li>
+          <li><a href="">Vitiligio</a></li>
+        </ul>
       </div>
     </div>
 
@@ -87,22 +102,24 @@
     <div class="container-fluid" id="hero-banner">
       <div class="row">
         <div class="col-sm-12 col-md-6 p-5 order-last order-md-first m-auto">
+          <div class="newDiv text-center"><p>New!</p></div>
           <h2>All Natural Skin Remedies.</h2>
           <p>
             A healthier you from the inside out. We’ve sourced the cleanest
             ingredients to create a line of clean skin care treatments that
             leave you feeling your best
           </p>
-          <button>Shop products</button>
+          <button id="heroBtn">Shop products</button>
         </div>
         <div class="col-sm-12 col-md-6">
-          <img id="heroMainImg"
+          <img
+            id="heroMainImg"
             src="./Assets/updated_Header_copy.png"
             alt=""
             width="100%"
             height="100%"
           />
-          
+
           <!-- <img src="./Assets/plant.png" alt="" id="plant">
           <img src="./Assets/plant-1.png" alt="" id="plant1">
           <img src="./Assets/ezcema@3x.png" alt="" id="bottleImage"> -->
@@ -124,34 +141,46 @@
 
     <div class="container-fluid product-teaser">
       <div class="container">
-        <div class="row">
+        <div class="d-flex justify-content-between px-3">
+          <span>Most Popular</span>
+          <span>Shop all products</span>
+        </div>
+        <div class="row prodTeasRow">
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/Cream1_copy.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/vitiligio.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/suburn1.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/ezcema.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
         </div>
       </div>
@@ -175,34 +204,46 @@
 
     <div class="container-fluid product-teaser">
       <div class="container">
+        <div class="d-flex justify-content-between px-3">
+          <span>Top Rated</span>
+          <span>Shop all products</span>
+        </div>
         <div class="row">
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/ezcema.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <h3>Psoriasis Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/ezcema-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <h3>Ezcema Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/suburn1-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <h3>Sunburn Ointment</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/vitiligio_Balm.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <h3>Vitiligio Balm</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
         </div>
         <div class="row">
@@ -211,84 +252,102 @@
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/Cream1_copy.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/acne_Cream_copy.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
             <img src="./Assets/ezema_dropper.png" alt="" width="100%" />
             <h3>Acne Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
 
-    
     <!--=====================Teaser 2===========================-->
     <div class="container-fluid" id="teaser-2">
       <div class="row">
         <div class="col-12 col-md-6 p-5 m-auto">
           <div id="woman-text">
             <h2>Clean products that deliver better solutions</h2>
-          <p>
-            A healthier you from the inside out. We’ve sourced the cleanest
-            ingredients to create a line of clean skin care treatments that
-            leave you feeling your best
-          </p>
-          <button>Shop more</button>
+            <p>
+              A healthier you from the inside out. We’ve sourced the cleanest
+              ingredients to create a line of clean skin care treatments that
+              leave you feeling your best
+            </p>
+            <button>Shop more</button>
           </div>
         </div>
         <div class="col-12 col-md-6 order-first" id="woman-image"></div>
       </div>
     </div>
-    <!--=====================Product Teaser===========================-->
+    <!--=====================Product Teaser 3===========================-->
 
     <div class="container-fluid product-teaser">
       <div class="container">
+        <div class="d-flex justify-content-between px-3">
+          <span>Recommended</span>
+          <span>Shop all products</span>
+        </div>
         <div class="row">
           <div class="col-md-3 col-6 text-center">
-            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <img src="./Assets/psoriasis_treatment.png" alt="" width="100%" />
+            <h3>Psoriasis Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
-            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <img src="./Assets/vitiligio_Balm.png" alt="" width="100%" />
+            <h3>Vitiligio Balm</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
-            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <img src="./Assets/psoriasi_Cream.png" alt="" width="100%" />
+            <h3>Psoriasis Cream</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
           <div class="col-md-3 col-6 text-center">
-            <img src="./Assets/Cream1-1.png" alt="" width="100%" />
-            <h3>Acne Cream</h3>
+            <img src="./Assets/vitiglio_treatment.png" alt="" width="100%" />
+            <h3>Vitiligio Treatment</h3>
             <p>All Natural ingredients</p>
             <h4>$24.99</h4>
-            <button>Add to cart</button>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
           </div>
         </div>
       </div>
@@ -436,5 +495,6 @@
         </div>
       </div>
     </div>
+    <script src="./JS/app.js"></script>
   </body>
 </html>

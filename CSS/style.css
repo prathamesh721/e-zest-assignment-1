@@ -1,3 +1,109 @@
+:root {
+
+    /* Colors: */
+    --cape-palliser-a67744: #A67744;
+    --beige-f7f5e6: #F7F5E6;
+    --alabasterr-f7f7f7: #F7F7F7;
+    --athens-gray-eef2f4: #EEF2F4;
+    --silver-rust-c6b9b6: #C6B9B6;
+    --oxford-blue-354e57: #354E57;
+    --como-547665: #547665;
+    --mischka-d7ccdd: #D7CCDD;
+    --rangitoto-2e2e22: #2E2E22;
+    --punch-de3b35: #DE3B35;
+    --blue-0014ff: #0014FF;
+    --white-ffffff: #FFFFFF;
+    
+    /* Font/text values */
+    --unnamed-font-family-proxima-nova: Proxima Nova;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-font-size-32: 32px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-48: 48px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-17: 17px;
+    --unnamed-line-spacing-22: 22px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-34: 34px;
+    --unnamed-line-spacing-38: 38px;
+    --unnamed-line-spacing-48: 48px;
+    --unnamed-line-spacing-58: 58px;
+    }
+    
+    /* Character Styles */
+    .headline-—-48pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-48);
+    line-height: var(--unnamed-line-spacing-58);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+    .headline-2-—-40pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-48);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+    .headline-3-—-32pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-38);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+    .headline-4-—-28pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-28);
+    line-height: var(--unnamed-line-spacing-34);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+    .headline-5-—-18pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+    .headline-6-—-14pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-17);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--rangitoto-2e2e22);
+    }
+    .body-2-—-14pt {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--oxford-blue-354e57);
+    }
+
+
+
+
+
 
 *{
     --beige:#f7f5e6;
@@ -28,14 +134,84 @@ ul > li > a{
     
 }
 
+/*=========================Header===========================*/
+
+#header{
+    background-color: #E2E6E9;
+}
+#navBottomMenu ul  li  a{
+   
+    color: var(--oxford-blue-354e57);
+  
+    font: normal normal medium 16px/20px Proxima Nova;
+    letter-spacing: 0.8px;
+    
+    
+    padding: 1em;
+}
+
 /*=====================Hero Banner===========================*/
+.newDiv{
+    background: var(--alabasterr-f7f7f7) 0% 0% no-repeat padding-box;
+
+
+width: 4em;
+}
+.newDiv p{
+   
+padding:  0.5em 1em;
+color: var(--oxford-blue-354e57);
+
+font: normal normal 600 12px/14px Proxima Nova;
+
+
+
+}
+
 #hero-banner{
     background-color: #E2E6E9;
 }
+#hero-banner h2{
+   
+
+color: var(--oxford-blue-354e57);
+
+font: normal normal bold 48px/58px Proxima Nova;
+
+
+}
+#hero-banner p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-proxima-nova);
+    color: var(--oxford-blue-354e57);
+
+}
+#heroBtn{
+    border: 1px solid var(--oxford-blue-354e57);
+    
+}
+#heroBtn button{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-proxima-nova);
+    color: var(--rangitoto-2e2e22);
+}
+
 #heroMainImg{
     position: relative;
     
    
+}
+
+/*===========================Secondary banner============*/
+#secondary-banner h2{
+    font: normal normal bold 28px/34px Proxima Nova;
+    color: var(--oxford-blue-354e57);
+}
+#secondary-banner{
+    border: 1px solid var(--como-547665);
+    background-color: #EEF3F4;
+}
+#secondary-banner p{
+    font: normal normal normal 16px/20px Proxima Nova;
+    color: var(--oxford-blue-354e57);
 }
 #plant{
     position: absolute;
@@ -56,14 +232,33 @@ ul > li > a{
     z-index: 2;
     width: 25%;
 }
+/*===============================Product Teaser===========================*/
 
-#secondary-banner{
-    border: 1px solid var(--como);
-    background-color: #EEF3F4;
-}
 .product-teaser{
     background-color: #EEF3F4;
     padding: 4em 0;
+}
+.product-teaser span, h3{
+    font: normal normal bold 14px/17px Proxima Nova;
+    color: var(--rangitoto-2e2e22);
+}
+.product-teaser p{
+    color: var(--rangitoto-2e2e22);
+    font: normal normal normal 12px/16px Proxima Nova;
+}
+.product-teaser h4{
+    font: normal normal medium 12px/15px Proxima Nova;
+    color: var(--rangitoto-2e2e22);
+}
+.product-teaser button{
+    font: normal normal medium 12px/15px Proxima Nova;
+    color: var(--rangitoto-2e2e22);
+    border: 1px solid var(--oxford-blue-354e57);
+    background-color: transparent;
+    padding: 0.25em 3em ;
+}
+.product-teaser button:hover{
+    background-color: var(--white);
 }
 /*===============================Teaser===========================*/
 
@@ -78,8 +273,19 @@ ul > li > a{
     background-color: var(--como);
     color: var(--white);
 }
+#teaser-1 h2{
+    font: normal normal bold 40px/55px Proxima Nova;
+}
 #teaser-1 p{
     color: var(--athens-gray);
+    font: normal normal normal 16px/24px Proxima Nova;
+}
+#teaser-1 button{
+    border: 1px solid var(--white-ffffff);
+    color: var(--beige-f7f5e6);
+    font: normal normal bold 14px/17px Proxima Nova;
+    background-color: transparent;
+    padding: 0.25em 3em;
 }
 
 
@@ -125,7 +331,9 @@ ul > li > a{
 .col-4 > a{
     color: var(--white);
 }
-
+#footer h3{
+    color: var(--white);
+}
 #subscribeDiv{
     position: relative;
     width: 60%;
@@ -159,4 +367,28 @@ ul > li > a{
 }
 #footerBorder{
     border-bottom: 1px solid var(--white);
+    
 }
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .product-teaser i{
+        display: none;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 992px){ 
+    .product-teaser i{
+        display: none;
+    }
+ }
+ */
+/*
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
