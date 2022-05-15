@@ -66,9 +66,9 @@
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
-                  id="inputSearch" 
+                  id="inputSearch"
                 />
-                <button class="btn " type="submit" onclick="displayInput()">
+                <button class="btn" type="submit" onclick="displayInput()">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -112,17 +112,19 @@
           <button id="heroBtn">Shop products</button>
         </div>
         <div class="col-sm-12 col-md-6">
-          <img
-            id="heroMainImg"
-            src="./Assets/updated_Header_copy.png"
-            alt=""
-            width="100%"
-            height="100%"
-          />
+          <div id="heroMainImg">
+            <img
+              src="./Assets/updated_Header_copy.png"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+            <img src="./Assets/plant.png" alt="" id="plant" />
+            <img src="./Assets/plant-1.png" alt="" id="plant1" />
+            <img src="./Assets/ezcema@3x.png" alt="" id="bottleImage" />
+          </div>
 
-          <!-- <img src="./Assets/plant.png" alt="" id="plant">
-          <img src="./Assets/plant-1.png" alt="" id="plant1">
-          <img src="./Assets/ezcema@3x.png" alt="" id="bottleImage"> -->
+         
         </div>
       </div>
     </div>
@@ -414,7 +416,7 @@
       </div>
     </div>
     <!--=================================News Letter===================================-->
-    <div class="container py-5 text-center">
+    <div class="container-fluid py-5 text-center" id="newsLetter">
       <div class="row">
         <div class="col-12 col-md-2">
           <h2>Join the Sooth family</h2>
@@ -426,8 +428,10 @@
           </p>
         </div>
         <div class="col-12 col-md-5">
-          <input type="text" />
-          <button>Subscribe</button>
+          <div id="subscribeDiv0">
+            <input type="text" placeholder="Your email..." />
+            <button>Subscribe</button>
+          </div>
         </div>
       </div>
     </div>
@@ -436,7 +440,7 @@
     <div class="container-fluid py-5" id="footer">
       <div class="container">
         <div class="row" id="footerBorder">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 order-last order-md-first">
             <h2>sooth</h2>
             <p>Explore our innovative skincare products</p>
             <div id="subscribeDiv">
